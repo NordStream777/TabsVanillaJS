@@ -7,15 +7,22 @@
 window.addEventListener("DOMContentLoaded", function(){
     'use scrict'
 
-    let container = document.querySelector(".info-header"); вместо .info-header указваем нужный класс родителя табов (блок в котором находятся наши табы). Отрывок из данного html кода:
+    let container = document.querySelector(".info-header");
+    
+    Вместо .info-header указваем нужный класс родителя табов (блок в котором находятся наши табы). Отрывок из данного html кода:
+    
                  <div class="info-header">
 					<div class="info-header-tab">Лечение</div>
 					<div class="info-header-tab">Отдых</div>
 					<div class="info-header-tab">Природа</div>
 					<div class="info-header-tab">Йога</div>
 				</div>
-    let tabs = document.querySelectorAll (".info-header-tab"); вместо .info-header-tab указываем нужный класс для табов
-    let dscr = document.querySelectorAll (".info-tabcontent"); вместо .info-tabcontent указываем нужный класс для контента внутри таба (контент должен иметь один класс)
+    
+    let tabs = document.querySelectorAll (".info-header-tab");
+    Вместо .info-header-tab указываем нужный класс для табов
+    
+    let dscr = document.querySelectorAll (".info-tabcontent"); 
+    Вместо .info-tabcontent указываем нужный класс для контента внутри таба (контент должен иметь один класс)
 
     function tabContentHide(a){
         for (let i = a; i < dscr.length; i++){
